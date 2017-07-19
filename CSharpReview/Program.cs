@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace CSharpReview
 {
@@ -6,7 +7,12 @@ namespace CSharpReview
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyClass cla = new MyClass();
+
+            cla.ChangeValue(23);
+
+            Console.Read();
         }
     }
+
 }
