@@ -6,19 +6,20 @@ namespace CSharpReview
 {
     class BoxAndUnBox
     {
-
+        // 三次装箱
         public void Box()
         {
             int i = 1;
 
-            object o = i;
+            Console.WriteLine("{0}, {1}, {2}", i, i, i);
         }
-
+        // 一次装箱
         public void UnBox()
         {
-            object o = 21;
+            int i = 21;
+            object o = i;
 
-            int i = (int)o;
+            Console.WriteLine("{0}, {1}, {2}", o, o, o);
         }
     }
 }
