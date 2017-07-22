@@ -7,10 +7,15 @@ namespace CSharpReview
     {
         static void Main(string[] args)
         {
-            MyClass cla = new MyClass();
+            //MyClass cla = new MyClass();
 
-            cla.ChangeValue(23);
+            //cla.ChangeValue(23);
 
+
+
+            BaseClass cls = new SubClass();
+            cls.Method1();
+            cls.Method2();
             Console.Read();
         }
     }

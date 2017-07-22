@@ -19,9 +19,9 @@ namespace CSharpReview
         private double _accul;
     }
 
-    class SubClass : BaseCtor
+    class SubCtor : BaseCtor
     {
-        public SubClass(int count, double acc) : base(acc)
+        public SubCtor(int count, double acc) : base(acc)
         {
             _otherCount = count;
         }
