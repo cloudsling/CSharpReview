@@ -14,11 +14,22 @@ namespace CSharpReview
             //cls.Method1();
             //cls.Method2();
 
-            OperatorOverride oper1 = new OperatorOverride { Id = 12, Tag = 32, Name = "Ling" };
-            OperatorOverride oper2 = new OperatorOverride { Id = 12, Tag = 32, Name = "Ling" };
-            var obj = oper2 + oper1;
-            Console.WriteLine(obj.Name + obj.Tag);
+            //OperatorOverride oper1 = new OperatorOverride { Id = 12, Tag = 32, Name = "Ling" };
+            //OperatorOverride oper2 = new OperatorOverride { Id = 12, Tag = 32, Name = "Ling" };
+            //var obj = oper2 + oper1;
+            //Console.WriteLine(obj.Name + obj.Tag);
 
+            //DateTime dt = default(DateTime);
+            //Console.WriteLine(dt);
+
+            int a = 1, b = 3;
+            Console.WriteLine("a={0},b={1}", a, b);
+            a = b + (b = a) * 0;
+            Console.WriteLine("a={0},b={1}", a, b);
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            Console.WriteLine("a={0},b={1}", a, b);
 
             Console.Read();
         }

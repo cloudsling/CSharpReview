@@ -11,6 +11,8 @@ namespace CSharpReview
         public int Tag { get; set; }
         public string Name { get; set; }
 
+        public List<string> NameCollection { get; set; }
+
         public static OperatorOverride operator +(OperatorOverride thisObj, OperatorOverride other)
         {
             return new OperatorOverride
@@ -19,6 +21,12 @@ namespace CSharpReview
                 Tag = thisObj.Tag * other.Tag,
                 Name = thisObj.Name
             };
+        }
+
+        public string this[int index]
+        {
+            get => NameCollection[index];
+            set => NameCollection[index] = value;
         }
     }
 }
