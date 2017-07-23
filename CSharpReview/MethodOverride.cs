@@ -9,7 +9,7 @@ namespace CSharpReview
 
     }
 
-    class BaseClass
+    partial class BaseClass
     {
         internal void Method1()
         {
