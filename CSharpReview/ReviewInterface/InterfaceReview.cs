@@ -44,7 +44,7 @@ namespace CSharpReview.ReviewInterface
 
         void IDisposable.Dispose()
         {
-            Console.WriteLine("Intreface dispose");
+            Console.WriteLine("Interface dispose");
         }
     }
 }
