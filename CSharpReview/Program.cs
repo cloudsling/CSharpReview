@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using CSharpReview.ReviewInterface;
 
 namespace CSharpReview
 {
@@ -22,14 +23,16 @@ namespace CSharpReview
             //DateTime dt = default(DateTime);
             //Console.WriteLine(dt);
 
-            int a = 1, b = 3;
-            Console.WriteLine("a={0},b={1}", a, b);
-            a = b + (b = a) * 0;
-            Console.WriteLine("a={0},b={1}", a, b);
-            a = a + b;
-            b = a - b;
-            a = a - b;
-            Console.WriteLine("a={0},b={1}", a, b);
+            //int a = 1, b = 3;
+            //Console.WriteLine("a={0},b={1}", a, b);
+            //a = b + (b = a) * 0;
+            //Console.WriteLine("a={0},b={1}", a, b);
+            //a = a + b;
+            //b = a - b;
+            //a = a - b;
+            //Console.WriteLine("a={0},b={1}", a, b);
+
+            InterfaceReview.Test();
 
             Console.Read();
         }
