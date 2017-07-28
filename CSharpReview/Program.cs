@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using CSharpReview.CustomAttribute;
 using CSharpReview.ReviewInterface;
 
 namespace CSharpReview
@@ -34,9 +35,13 @@ namespace CSharpReview
 
             //InterfaceReview.Test();
 
-            Delegate.Delegate del = new Delegate.Delegate();
-            del.DelegateTest();
+            //Delegate.Delegate del = new Delegate.Delegate();
+            //del.DelegateTest();
 
+            AttributeTest.Test();
+
+
+            Console.WriteLine("End.............................");
             Console.Read();
         }
     }
