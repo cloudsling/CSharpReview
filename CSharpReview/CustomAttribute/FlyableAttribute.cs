@@ -50,8 +50,7 @@ namespace CSharpReview.CustomAttribute
     {
         internal static void Test()
         {
-            var members = from m in typeof(AttributeSomeType).GetTypeInfo().GetCustomAttributes()
-                          select m;
+            var members = typeof(AttributeSomeType).GetTypeInfo().GetCustomAttributes();
 
             AttributeChecking1(members);
 

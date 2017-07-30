@@ -38,8 +38,9 @@ namespace CSharpReview
             //Delegate.Delegate del = new Delegate.Delegate();
             //del.DelegateTest();
 
-            AttributeTest.Test();
+            //AttributeTest.Test();
 
+            new ExceptionTest.ExceptionTest().Test();
 
             Console.WriteLine("End.............................");
             Console.Read();
