@@ -16,6 +16,10 @@ namespace CSharpReview.ExceptionTest
             {
                 Console.WriteLine(e);
             }
+            finally
+            {
+                Environment.FailFast(null);
+            }
         }
 
         private void Exception1()
