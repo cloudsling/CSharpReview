@@ -40,7 +40,9 @@ namespace CSharpReview
 
             //AttributeTest.Test();
 
-            new ExceptionTest.ExceptionTest().Test();
+            //new ExceptionTest.ExceptionTest().Test();
+
+            // 17.7.31.打卡
 
             Console.WriteLine("End.............................");
             Console.Read();
