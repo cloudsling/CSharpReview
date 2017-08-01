@@ -9,11 +9,13 @@ namespace CSharpReview.ReflectionTest
     {
         public static void Test(object obj)
         {
-            var obj1 = (TargetObject)CreateInstanceWithMethod(obj.GetType(), 10, "Erwin");
+            var obj1 = (TargetObject)CreateInstanceWithMethod(obj.GetType(), 12, "Schrodinger");
             var obj2 = (TargetObject)CreateInstanceByConstructor(obj.GetType(), 10, "Erwin");
+            var obj3 = (TargetObject)obj;
 
             obj1.DoOtherThing();
             obj2.DoSomething();
+            obj3.DoSomething();
         }
 
         public static object CreateInstanceByConstructor(Type ty, params object[] args)

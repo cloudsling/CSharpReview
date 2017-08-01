@@ -45,7 +45,7 @@ namespace CSharpReview
 
             // 17.7.31.打卡
 
-            ReflectionTest.ReflectionTest.Test(new TargetObject(12, "Schrodinger"));
+            ReflectionTest.ReflectionTest.Test(new TargetObject(120, "Admin"));
 
             Console.WriteLine("End.............................");
             Console.Read();

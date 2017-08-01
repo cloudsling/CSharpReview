@@ -19,12 +19,12 @@ namespace CSharpReview.ReflectionTest
 
         public void DoSomething()
         {
-            Console.WriteLine("Doing Something");
+            Console.WriteLine("{0} with id {1} is Doing Something........", Name, Id);
         }
 
         public void DoOtherThing()
         {
-            Console.WriteLine("Doing other thing......");
+            Console.WriteLine("{0} with id {1} is Doing other thing......", Name, Id);
         }
     }
 }
