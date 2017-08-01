@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using CSharpReview.CustomAttribute;
+using CSharpReview.ReflectionTest;
 using CSharpReview.ReviewInterface;
 
 namespace CSharpReview
@@ -43,6 +44,8 @@ namespace CSharpReview
             //new ExceptionTest.ExceptionTest().Test();
 
             // 17.7.31.打卡
+
+            ReflectionTest.ReflectionTest.Test(new TargetObject(12, "Schrodinger"));
 
             Console.WriteLine("End.............................");
             Console.Read();

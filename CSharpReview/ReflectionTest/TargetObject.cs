@@ -6,7 +6,6 @@ namespace CSharpReview.ReflectionTest
 {
     internal class TargetObject
     {
-        public TargetObject() { }
 
         public TargetObject(int i, string str)
         {

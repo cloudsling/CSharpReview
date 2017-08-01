@@ -9,13 +9,12 @@ namespace CSharpReview.ReflectionTest
     {
         public static void Test(object obj)
         {
-            var obj1 = (TargetObject)CreateInstanceWithMethod(obj.GetType(), 12, "Schrodinger");
+            var obj1 = (TargetObject)CreateInstanceWithMethod(obj.GetType(), 10, "Erwin");
             var obj2 = (TargetObject)CreateInstanceByConstructor(obj.GetType(), 10, "Erwin");
 
             obj1.DoOtherThing();
             obj2.DoSomething();
         }
-
 
         public static object CreateInstanceByConstructor(Type ty, params object[] args)
         {
@@ -33,7 +32,7 @@ namespace CSharpReview.ReflectionTest
 
         public static object CreateInstanceWithMethod(Type ty, params object[] args)
         {
-            return Activator.CreateInstance(ty);
+            return Activator.CreateInstance(ty, args);
         }
     }
 }
