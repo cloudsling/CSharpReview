@@ -49,7 +49,8 @@ namespace CSharpReview
 
             //ThreadTest.ThreadSample.Test();
 
-            ThreadTest.ThreadPoolTest.Test();
+            //ThreadTest.ThreadPoolTest.Test();
+            ThreadTest.CancellationDemo.Test();
 
             Console.WriteLine("End.............................");
             Console.Read();
