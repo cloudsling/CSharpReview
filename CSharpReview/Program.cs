@@ -45,7 +45,9 @@ namespace CSharpReview
 
             // 17.7.31.打卡
 
-            ReflectionTest.ReflectionTest.Test(new TargetObject(120, "Admin"));
+            //ReflectionTest.ReflectionTest.Test(new TargetObject(120, "Admin"));
+
+            ThreadTest.ThreadSample.Test();
 
             Console.WriteLine("End.............................");
             Console.Read();

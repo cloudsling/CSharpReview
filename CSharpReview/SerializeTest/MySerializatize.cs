@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Runtime.Serialization;
 
 namespace CSharpReview.SerializeTest
 {
