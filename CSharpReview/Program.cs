@@ -47,7 +47,9 @@ namespace CSharpReview
 
             //ReflectionTest.ReflectionTest.Test(new TargetObject(120, "Admin"));
 
-            ThreadTest.ThreadSample.Test();
+            //ThreadTest.ThreadSample.Test();
+
+            ThreadTest.ThreadPoolTest.Test();
 
             Console.WriteLine("End.............................");
             Console.Read();
