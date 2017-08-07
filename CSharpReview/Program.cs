@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using CSharpReview.CustomAttribute;
 using CSharpReview.ReflectionTest;
 using CSharpReview.ReviewInterface;
+using CSharpReview.TaskDemo;
 
 namespace CSharpReview
 {
@@ -50,8 +51,9 @@ namespace CSharpReview
             //ThreadTest.ThreadSample.Test();
 
             //ThreadTest.ThreadPoolTest.Test();
-            ThreadTest.CancellationDemo.Test();
+            //ThreadTest.CancellationDemo.Test();
 
+            TaskBasic.Test();
             Console.WriteLine("End.............................");
             Console.Read();
         }
