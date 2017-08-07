@@ -21,7 +21,7 @@ namespace CSharpReview.TaskDemo
 
             t.Start();
 
-            Do();
+            Parallel.For(0, 10, i => Console.WriteLine($"Main Line: {i}.............."));
             t.ContinueWith(tr => Console.WriteLine($"Task finish with return {tr.Result}"));
         }
 
@@ -29,17 +29,9 @@ namespace CSharpReview.TaskDemo
         {
             for (var i = 0; i < 10; i++)
             {
-                Console.WriteLine($"Line: {i}..............");
+                Console.WriteLine($" Line: {i}..............");
             }
             return 100;
-        }
-
-        public void Do()
-        {
-            for (var i = 0; i < 10; i++)
-            {
-                Console.WriteLine($"Main Line: {i}..............");
-            }
         }
     }
 }
